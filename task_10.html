@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Hover Effect</title>
+    <style>
+        #image {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            transition: transform 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <img id="image" src="img.jpg" alt="Image" onmouseover="changePosition()" onmouseout="resetPosition()">
+    <script>
+        function changePosition() {
+            document.getElementById('image').style.transform = 'translate(50%, 50%)';
+        }
+
+        function resetPosition() {
+            document.getElementById('image').style.transform = 'translate(0, 0)';
+        }
+    </script>
+</body>
+</html>
