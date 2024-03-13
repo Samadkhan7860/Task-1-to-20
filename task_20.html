@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const date = new Date().getDay();
+      let dayMessage;
+
+      switch (date) {
+        case 0:
+          dayMessage = "Sunday";
+          break;
+        case 1:
+          dayMessage = "Monday";
+          break;
+        case 2:
+          dayMessage = "Tuesday";
+          break;
+        case 3:
+          dayMessage = "Wednesday";
+          break;
+        case 4:
+          dayMessage = "Thursday";
+          break;
+        case 5:
+          dayMessage = "Friday";
+          break;
+        case 6:
+          dayMessage = "Saturday";
+          break;
+        default:
+          dayMessage = "Unknown";
+      }
+
+      document.write(`Today is ${dayMessage}`);
+    </script>
+  </body>
+</html>
