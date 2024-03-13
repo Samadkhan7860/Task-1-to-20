@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Navigation Bars</title>
+<style>
+    body{
+        margin: 0;    
+    }
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
+    .topnav a {
+        float: left;
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    #leftnav {
+        height: 100vh;
+        width: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #444;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    #leftnav a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        display: block;
+    }
+    #leftnav a:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body>
+<div class="topnav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+</div>
+<div id="leftnav">
+    <a href="#">Link 1</a>
+</div>
+</body>
+</html>
